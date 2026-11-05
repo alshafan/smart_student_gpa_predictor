@@ -1,0 +1,32 @@
+
+SMART STUDENT GPA REPORT
+Semester GPA: 8.33
+Updated CGPA: 8.58
+maths | Credits: 2 | Total: 77.5 | Grade: B+ | GP: 7
+toc | Credits: 2 | Total: 82.5 | Grade: A | GP: 8
+fds | Credits: 2 | Total: 94.0 | Grade: O | GP: 10
+-----------------------------
+
+SMART STUDENT GPA REPORT
+Semester GPA: 9.64
+Updated CGPA: 9.64
+Maths | Credits: 3 | Total: 100.0 | Grade: O | GP: 10
+Toc | Credits: 4 | Total: 93.5 | Grade: O | GP: 10
+Dsa | Credits: 4 | Total: 87.5 | Grade: A+ | GP: 9
+-----------------------------
+
+SMART STUDENT GPA REPORT
+Semester GPA: 10.00
+Updated CGPA: 10.00
+Biology | Credits: 4 | Total: 100.0 | Grade: O | GP: 10
+Chemistry | Credits: 3 | Total: 100.0 | Grade: O | GP: 10
+Physics | Credits: 3 | Total: 100.0 | Grade: O | GP: 10
+-----------------------------
+
+SMART STUDENT GPA REPORT
+Semester GPA: 9.67
+Updated CGPA: 7.85
+maths | Credits: 2 | Total: 85.0 | Grade: A+ | GP: 9
+toc | Credits: 2 | Total: 95.0 | Grade: S | GP: 10
+fds | Credits: 2 | Total: 95.0 | Grade: S | GP: 10
+-----------------------------

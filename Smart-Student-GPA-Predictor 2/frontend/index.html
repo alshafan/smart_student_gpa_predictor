@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart GPA Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">SMART<span>GPA</span></div>
+    <p>Student Academic Performance System</p>
+</header>
+
+<main>
+
+    <section class="welcome">
+        <div>
+            <h1>Academic Dashboard</h1>
+            <p>Calculate, analyze and improve your academic performance.</p>
+        </div>
+        <span class="server-status" id="serverStatus">
+            ● Connecting to C Server
+        </span>
+    </section>
+
+    <section class="card">
+        <h2>Previous Semester History</h2>
+        <p>Enter previous GPAs separated by commas (maximum 7).</p>
+        <input id="history" type="text"
+               placeholder="Example: 8.0, 8.5, 9.0">
+    </section>
+
+    <section class="card">
+        <div class="heading">
+            <div>
+                <h2>Subject Management</h2>
+                <p>Add your subjects and academic marks.</p>
+            </div>
+            <button id="addSubject" class="secondary">+ Add Subject</button>
+        </div>
+
+        <div class="subject-labels">
+            <span>Subject</span>
+            <span>Credits</span>
+            <span>Internal /50</span>
+            <span>External /100</span>
+            <span>Action</span>
+        </div>
+
+        <div id="subjects"></div>
+
+        <button id="calculate" class="primary">
+            Calculate Academic Results
+        </button>
+    </section>
+
+    <section id="results" class="hidden">
+
+        <h2 class="section-title">Academic Overview</h2>
+
+        <div class="stats">
+            <div class="stat">
+                <p>Semester GPA</p>
+                <h1 id="gpa">0.00</h1>
+            </div>
+
+            <div class="stat">
+                <p>Updated CGPA</p>
+                <h1 id="cgpa">0.00</h1>
+            </div>
+
+            <div class="stat">
+                <p>Subjects</p>
+                <h1 id="count">0</h1>
+            </div>
+        </div>
+
+        <section class="card">
+            <h2>Subject Grade Report</h2>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Credits</th>
+                            <th>Total</th>
+                            <th>Grade</th>
+                            <th>GP</th>
+                        </tr>
+                    </thead>
+                    <tbody id="report"></tbody>
+                </table>
+            </div>
+
+            <button class="secondary" id="download">
+                Download Report
+            </button>
+            <span id="savedMessage"></span>
+        </section>
+
+        <section class="card">
+            <h2>Next Semester Prediction</h2>
+            <p>Calculated by the C linear regression algorithm.</p>
+
+            <div class="prediction">
+                <p>Predicted Next Semester GPA</p>
+                <h1 id="prediction">0.00</h1>
+                <small id="predictionInfo"></small>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Target GPA Planner</h2>
+            <p>Calculate the external marks required for your target grade.</p>
+
+            <input id="target" type="number"
+                   min="0" max="10" step="0.1"
+                   placeholder="Enter target GPA (0-10)">
+
+            <button id="plan" class="primary">
+                Calculate Required Marks
+            </button>
+
+            <div id="planner"></div>
+        </section>
+
+    </section>
+
+</main>
+
+<footer>
+    <h3>SMART GPA PREDICTOR</h3>
+    <p>Powered by C Programming Language</p>
+    <p>Academic Grade & Performance Management System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
